@@ -1,0 +1,237 @@
+*{
+    /* 内外边距为0 */
+    padding:0%;
+    margin:0%;
+    /* 设置各种样式为空 */
+    text-decoration: none;
+    list-style: none;
+    /* 设置所有字体 */
+    font-family: "楷体";
+}
+
+body{
+    /* background-image:-webkit-linear-gradient(60deg,rgba(244, 209, 85,0.3),rgba(160, 51, 10,1)); */
+    background-color:#a0330a;
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover; 
+}
+.content{
+    margin:0% 0%;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+.nav{
+    /* 设置导航栏的宽高 */
+    width:100%;
+    height:50px;
+    box-shadow: 0 1px 2px #dcbdb4;
+    /* 设置导航栏的图层,使下拉列表不影响下方div块 */
+    z-index:999;
+    position:absolute;
+}
+.btli{
+    float:left;
+    /* 设置导航项间距 */
+    padding:0px 50px;
+    /* 设置宽和行高 */
+    width:80px;
+    line-height: 50px;
+    font-size: 20px;
+    /* 对齐方式为水平居中 */
+    text-align: center;
+}
+
+.navlist a{
+    color: #fff;
+    /* 以块模式显示 */
+    display: inline-block;
+}
+
+.navlist a:hover{
+    /* background:#fff; */
+}
+
+.btli img{
+    /* 文字与图片垂直居中 */
+    vertical-align: middle;
+}
+/* 鼠标悬停在导航项时,下拉显示 */
+.btli:hover .droplist{
+    display: block;
+}
+
+.droplist li{
+    /* 给每一项加一条线分隔开 */
+    border-top:1px solid #fff;
+}
+
+.droplist{
+    /* 改变下拉列表的颜色 */
+    background-color: #666;
+    /* 加个阴影 */
+    box-shadow: 0 1px 2px #d39a9a;
+    /* 初始不显示 */
+    display:none;
+    border-radius: 6px;
+    /* 隐藏超出来的部分 */
+    overflow:hidden;
+}
+
+.nav ul li a img{
+    width:30px;
+    height:30px;
+}
+.top_img_nav{
+    padding:100px 0px 0px 0px;
+    margin:0px;
+}
+.top_img_nav.shell ul li{
+    margin-left:100px;
+    font-size:28px;
+    display:inline-block;
+    padding:15px;
+}
+
+#title{
+    line-height: 100px;
+    font:150px '楷体';
+    color:#bb7d4e;
+    text-align: center;
+    margin:1% 0% 0% 0%;
+}
+#title img{
+    width: 100px;
+    height:100px;
+    float:left;
+}
+#login{
+    float:right;
+    z-index:999;
+    position:relative;
+    width:50px;
+    height:100px;
+    font-family: 'Courier New', Courier, monospace;
+    background-image: -moz-radial-gradient();
+}
+.shell{
+    margin-left:5%;
+    margin-right:5%;
+    display:flex;
+    width:90%;
+    height: 533px;
+}
+.box{
+    flex:1;
+    overflow:hidden;
+    transform: .5s;
+    margin:0 20px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, .5);
+    border-radius: 20px;
+    border: 3px solid #d9d0d0; 
+    background-color: #eacb9c; 
+}
+
+.box->img{
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+    transition: .5s;
+}
+
+/* .box>span{
+    font:200 45px '楷体';
+    color:#2e1f12;
+    text-align:center;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.box:hover{
+    flex-basis:40%;
+}
+
+.box:hover->img{
+    width: 100%;
+    height: 100%;
+}
+.left_circle{
+    margin-top:20px;
+    float: left;
+    width: 180px;
+    border-radius:  20px 100px 100px 20px;
+    line-height: 100%;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, .5);
+	position:relative;
+}
+.right_circle{
+    margin-top:20px;
+    float: right;
+    width: 180px;
+    border-radius:  100px 20px 20px 100px;
+    line-height: 100%;
+    box-shadow: -10px 10px 20px rgba(0, 0, 0, .5);
+	position: relative;
+}
+input{
+    width: 100px;
+    height:100px;
+    border-radius:50px;
+    border-color: #fff;
+}
+
+.left_introduction{
+    margin:20px;
+    padding: 80px 0 80px 80px;
+    height: 240px;
+    width: 70%;
+    font-family: '楷体';
+    font-size: 32px;
+}
+.right_introduction{
+    padding: 80px 0 80px 80px;
+    height: 240px;
+    width: 70%;
+    font-family: '楷体';
+    font-size: 32px;
+    text-transform: capitalize;
+    position: relative;
+    left: 100px;
+}
+.left_button{
+    float: left;
+}
+.right_button{
+    float: right;
+}
+.FX,.CH,.CC,.JJ{
+    margin:0px 70px;
+    background-color: #eacb9c;
+    border-radius:40px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, .5);
+}
+.DC,.HH,.SC,.SF{
+    margin:20px 70px;
+    background-color: #c49162;
+    border-radius:20px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, .5);
+}
+
+
+.footer{
+    font: "楷体" 32px;
+    color:#fff;
+    background-color: #af3e0d;
+    padding : 10px;
+    text-align: center;
+    height:120px;
+    line-height:60px;
+}

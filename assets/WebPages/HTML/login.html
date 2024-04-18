@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户登录</title>
+    <link rel="stylesheet" href="../CSS/login.css"/>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="header">
+    </div>
+    <div class="content">
+        <div class="title">登录</div>
+        <div>
+            用户名称：<input type= "text" value="请输入用户名" onfocus="if(value=='请输入用户名'){value=''}" onblur="if(value==''){value='请输入用户名'}"/>
+        </div>
+        <div>
+            邮箱地址: <input type="text" value="请输入邮箱地址" onfocus="if(value=='请输入邮箱地址'){value=''}" onblur="if(value==''){value='请输入邮箱地址'}"/>
+        </div>
+        <div>
+            设置密码:
+            <input type="password" minlength="6" maxlength="20" />
+        </div>
+        <div>
+            确认密码: <input type="password" minlength="6" maxlength="20" />
+        </div>
+        <div>
+            真实姓名: <input type="text" value="请输入真实姓名" onfocus="if(value=='请输入您的姓名'){value=''}" onblur="if(value==''){value='请输入您的姓名'}"/>
+        </div>
+        <div>
+            您的性别:&nbsp;&nbsp;&nbsp;<input class="sex" type="radio" name="sex" value="man"/>男&nbsp;&nbsp;&nbsp;&nbsp;
+            <input class="sex" type="radio" name="sex" value="woman"/>女&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        <div>
+            您的手机：<input type="text" value="请输入您的手机号" onfocus="if(value=='请输入您的手机号'){value=''}" onblur="if(value==''){value='请输入您的手机号'}"/>
+        </div> 
+        <div>
+            <form action="" method="post" name="form_add">
+                <table class="insert-tab">
+                    <tr>
+                        <th width="180px">学院：</th>
+                        <td>
+                            <select id="college" name="college" onChange="getCity()">
+                                <option value="0">---请选择 学院：---</option>
+                                <option value="人工智能与大数据学院">人工智能与大数据学院</option>
+                                <option value="经济管理学院">经济管理学院</option>
+                                <option value="人文学院">人文学院</option>
+                                <option value="土木工程学院">土木工程学院</option>
+                                <option value="建筑管理学院">建筑管理学院</option>
+                                <option value="艺术与传媒学院">艺术与传媒学院</option>
+                                <option value="电气工程与智能制造学院">电气工程与智能制造学院</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>专业:</th>
+                        <td>
+                            <select id="profession" name="profession">
+                                <option value="0">---请选择 专业---</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div>
+            <a href="../index.html"><input type="button" value="提交" id="submit"></a>
+        </div>
+    </div>
+    <script type="text/javascript">
+        //定义了专业的二维数组，里面的顺序跟学院的顺序是相同的。通过 selectedIndex 获得学院的下标值来得到相应的专业数组
+        var arry_profession=[
+            ["软件工程","物联网工程","计算机科学与技术","数据科学与大数据技术","机器人工程","大数据"],
+            ["会计学","国际经济与贸易","工商管理","人力资源","资产评估","市场营销","电子商务"],
+            ["法学专业","英语专业","中文专业","汉语国际教育","文化产业管理","汉语言文学"],
+            ["桥梁建设","城市水系统工程","铁道工程","土木工程"],
+            ["工程造价","工程管理","房地产开发与管理","智能建造"],
+            ["播音主持与艺术","新闻传媒","表演舞蹈","新媒体运营","广播电视编导","艺术雕塑设计"],
+            ["机械设计制造及其自动化","机械电子工程","电气工程及其自动化","电气工程与智能控制","电缆工程","电机电器智能化"]
+        ];
+        function getCity(){
+    
+            //获得学院  下拉框的对象
+            var college_1=document.form_add.college;
+    
+            //获得专业  下拉框的对象
+            var profession_1=document.form_add.profession;
+    
+            //得到对应学院的专业数组
+            var college_2=arry_profession[college_1.selectedIndex - 1];
+    
+            //清空学院下拉框，仅留提示选项
+            profession_1.length=1;
+    
+            //将专业数组中的值填充到专业下拉框中
+            for(var i=0;i<college_2.length;i++){
+                profession_1[i+1]=new Option(college_2[i],college_2[i]);
+            }
+        }
+    </script>    
+</body>
+</html>

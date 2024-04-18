@@ -1,0 +1,168 @@
+*{
+    padding:0%;
+    margin:0%;
+    box-sizing:border-box;
+    text-decoration: none;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.container{
+    width:100%;
+    height:auto;
+}
+
+section{
+    height: 100vh;
+    position: relative;
+    color:rgba(255,255,255,.8);
+    /* 设置字体 */
+    font-size:10vh;
+    font-family:'楷体';
+    /* 文字阴影 */
+    text-shadow: 4px 4px rgba(46, 43, 43);
+    /* 弹性布局 */
+    display:flex;
+    /* 水平居中 */
+    justify-content: center;
+    /* 垂直居中 */
+    align-items: center;
+}
+
+.footer{
+    height: 10vh;
+    background-color: rgba(248, 239, 204, 0.7);
+    color:#000;
+    position: relative;
+    /* 设置字体 */
+    font-size:2vh;
+    font-family:'楷体';
+    /* 文字阴影 */
+    /* text-shadow: 4px 4px rgba(46, 43, 43); */
+    /* 弹性布局 */
+    display:flex;
+    /* 水平居中 */
+    justify-content: center;
+    /* 垂直居中 */
+    align-items: center;
+    /* 水平居中 */
+    text-align: center;
+}
+
+.img{
+    overflow: hidden;
+    /* 背景图片不重复 */
+    background-repeat: no-repeat;
+    /* 背景图片居中 */
+    background-position: center;
+    /* 背景图片固定 */
+    background-attachment: fixed;
+    background-size:cover;
+    /* 禁止用户误选中 */
+    user-select: none;
+}
+
+.content-zero{
+    background: url(../picture/flower_arrangement/1.jpg) no-repeat fixed center;
+    background-size:cover;
+}
+
+.content-one{
+    background:url(../picture/flower_arrangement/1.jpg) no-repeat fixed center;
+    background-size:cover;
+}
+
+.content-two{
+    background: url(../picture/flower_arrangement/2.jpg) no-repeat fixed center;
+    background-size:cover;
+}
+
+.content-three{
+    background: url(../picture/flower_arrangement/3.jpg) no-repeat fixed center;
+    background-size:cover;
+}
+.content-four{
+    background: url(../picture/flower_arrangement/4.jpeg) no-repeat fixed center;
+    background-size:cover;
+}
+.content-five{
+    background: url(../picture/flower_arrangement/5.jpg) no-repeat fixed center;
+    background-size:cover;
+}
+.content-six{
+    background: url(../picture/flower_arrangement/6.jpg) no-repeat fixed center;
+    background-size:cover;
+}
+.content-seven{
+    background: url(../picture/flower_arrangement/7.jpg) no-repeat fixed center;
+    background-size:cover;
+}
+.content-eight{
+    background: url(../picture/flower_arrangement/8.jpg) no-repeat fixed center;
+    background-size:cover;
+}
+
+
+.text-box{
+    width:100%;
+    height: 50%;
+    /* 绝对定位 */
+    position: absolute;
+    bottom: 25%;
+    /* 文字居中 */
+    text-align: center;
+    background-color: rgba(0,0,0,.3);
+    /* 旋转中心 */
+    transform-origin: center bottom;
+    /* 扭曲斜切 */
+    transform: skew(0, -8deg);
+}
+
+.text-box .cnt{
+    display: inline-block;
+    /* 右对齐 */
+    text-align: right;
+    /* 外边距 */
+    margin:40px 0 10px;
+    width: 700px;
+    /* 最大宽度 */
+    max-width:990px;
+    /* 设置变换参考点为右下 */
+    transform-origin: right bottom;
+    /* x方向0度 y方向8度 */
+    transform: skew(0,8deg);
+}
+
+.cnt h2{
+    margin-top: 100px;
+    font-size: 36px;
+    font-family: '楷体';
+    text-shadow: 1px 0px 0px #323232;
+    letter-spacing: 0.3em;
+    color:#fff;
+    margin-bottom:5px;
+}
+
+.cnt p{
+    font-size:2vh;
+    line-height: 1.7;
+    margin-bottom: 10px;
+    color:#fff;
+}
+
+.cnt a .btn{
+    font-size:90%;
+    font-family: '楷体';
+    letter-spacing: 0.1em;
+    text-shadow: 1px 0px 0px black;
+    line-height:2.8;
+    display: inline-block;
+    background-color: #eaeaea;
+    color:#000;
+    border:3px solid #000;
+    white-space: nowrap;
+    text-decoration: none;
+    padding:0 20px;
+}

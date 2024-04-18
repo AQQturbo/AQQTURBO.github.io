@@ -1,0 +1,70 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: '楷体';
+}
+
+body{
+
+    /* background-image:-webkit-linear-gradient(60deg,rgba(218, 169, 215, 0.637),rgba(128, 174, 235, 0.904)); */
+    background-image:-webkit-linear-gradient(60deg,rgba(218, 146, 51,0.75),rgba(221, 176, 120,0.6));
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    /* 谷歌 */
+    -webkit-background-size: cover;
+    /* opera */
+    -o-background-size: cover;
+    /* 火狐 */
+    -moz-background-size: cover;
+    /* ie */
+    -ms-background-size: cover;
+}
+
+h1{
+    text-align: center;
+    color:rgb(159,82,33);
+    font-size:10vh;
+    line-height: 20vh;
+    letter-spacing: 15px;
+}
+
+nav{
+    width:100%;
+    height: 5vh;
+    line-height: 5vh;
+    background-color: rgba(221, 176, 120,.4);
+    text-align: center;
+    font-size:3vh;
+    color:rgb(159,82,33);
+}
+
+nav ul a{
+    padding:5px 30px;
+    line-height: 5vh;
+}
+nav ul a:hover{
+    background-color: rgb(159,82,33);
+    color:rgb(221, 176, 120);
+}
+
+iframe{
+    position:absolute;
+    top:25vh;
+    left:10%;
+    /* margin:10% 0; */
+    width:80%;
+    height:100vh;
+}
+
+.footer{
+    width:100%;
+    height:30px;
+    /* 定位 */
+    position:absolute;
+    top:130vh;
+    /* 字体属性设置 */
+    font-size: 22px;
+    text-align: center;
+}

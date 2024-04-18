@@ -1,0 +1,70 @@
+*{
+    /* 内外边距为0 */
+    margin:0px;
+    padding:0px;
+    /* 设置各种样式为空 */
+    text-decoration: none;
+    list-style: none;
+    font-family: '楷体';
+    font-size:20px;
+}
+
+body{
+    background-color: cadetblue;
+    /* background-image: linear-gradient(to botton,rgba(255,255,0,0.5),rgba(255, 255, 0, 0.5),url('../picture/login.jpg')); */
+    background: url("../picture/login_bg.jpg") no-repeat;
+    background-size: cover;
+
+}
+p{
+    font-size: 42px;
+}
+.content{
+    text-align: center;
+}
+
+.title{
+    font-size: 70px;
+}
+.box{
+    width:500px;
+    height:400px;
+}
+div{
+    margin:15px;
+    text-align: center;
+}
+input{
+    width:200px;
+    height:50px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.sex{
+    width:30px;
+    height:30px;
+}
+.btn:disabled {
+	background-color: grey;
+}
+table{
+    margin: 0 40vw;
+}
+select{
+    text-align: center;
+    height: 50px;
+    width: 200px;
+    outline: none;
+    border-color: #ccc;
+    border-radius:4px;
+}
+
+#submit{
+    width:60px;
+    height:60px;
+    border-radius: 30px;
+    background-color:#fff;
+    border-color: #fff;
+    font-size:18px;
+}

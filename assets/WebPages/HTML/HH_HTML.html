@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>宋代绘画</title>
+    <link rel="stylesheet" href="../CSS/HH_CSS.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="header">
+        <h1>宋代绘画</h1>
+        <div class="nav">
+            <nav class="nav">
+                <ul>
+                    <a>宋代花鸟画发展</a>
+                    <a>宋代人物画发展</a>
+                    <a>宋代山水画发展</a>
+                </ul>
+            </nav>
+        </div>
+        
+    </div>
+    <div class="content">
+        <div class="neirong">
+            <!-- 花鸟画 -->
+            <div style="display:block;">
+                <iframe src="../HTML/HH1_HTML.html" frameborder="0"><a href="#" name="花鸟画"></a></iframe>
+            </div>
+            <!-- 人物画 -->
+            <div style="display:none">
+                <iframe src="../HTML/HH2_HTML.html" frameborder="0"><a href="#" name="人物画"></a></iframe>
+            </div>
+            <!-- 山水画 -->
+            <div style="display:none">
+                <iframe src="../HTML/HH3_HTML.html" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+            学院:计算机与人工智能学院&nbsp;&nbsp;专业:数字媒体技术&nbsp;&nbsp;学号:202121013128&nbsp;&nbsp;姓名:张琼尹
+    </div>
+    <script>
+        var lis=document.querySelector('ul').querySelectorAll('a');
+        var divs=document.querySelector('.neirong').querySelectorAll('div');
+        for(var i=0;i<lis.length;i++){
+            lis[i].setAttribute('index',i);
+            lis[i].onclick=function(){
+                for(var i=0;i<lis.length;i++){
+                    lis[i].className='';
+                }
+                this.className='choose';
+                var index=this.getAttribute('index');
+                for(var i=0;i<divs.length;i++){
+                    divs[i].style.display='none';
+                }
+                divs[index].style.display='block';
+            }
+        }
+    </script>
+</body>
+</html>
